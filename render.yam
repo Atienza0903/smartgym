@@ -1,0 +1,14 @@
+sudo apt update
+sudo apt install -y nginx curl
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt install -y nodejs
+sudo npm install -g pm2
+
+git clone <YOUR_REPOSITORY_URL> /var/www/smartgym
+cd /var/www/smartgym
+
+npm ci
+npm run db:seed
+npm run build
+pm2 start npm --name smartgym -- run start
+pm2 save

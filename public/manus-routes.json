@@ -1,0 +1,11 @@
+{
+  "routes": [
+    { "path": "/", "title": "SmartGym Overview" },
+    { "path": "/members", "title": "Member Management" },
+    { "path": "/attendance", "title": "Attendance & Access Logs" },
+    { "path": "/reservations", "title": "Workout Reservations" },
+    { "path": "/maintenance", "title": "Equipment Maintenance" },
+    { "path": "/analytics", "title": "Gym Analytics" },
+    { "path": "/rfid", "title": "RFID Access Control" }
+  ]
+}

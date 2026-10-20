@@ -1,0 +1,26 @@
+{
+  "name": "smartgym-operations",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "npm@10.9.2",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"node server/index.js\" \"vite --host 0.0.0.0 --port 3000\"",
+    "build": "vite build",
+    "start": "node server/index.js --production",
+    "db:seed": "node server/seed.js",
+    "check": "node --check server/index.js && node --check server/seed.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "concurrently": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "lucide-react": "latest",
+    "mysql2": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
